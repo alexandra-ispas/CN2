@@ -1,0 +1,21 @@
+1. Cum se numește parametrul ce definește lățimea instrucțiunilor (Nr. biți) ?
+INSTR_WIDTH - 16 bits
+
+2. Care e lățimea registrelor ? (Nr. biți)
+8 bits.
+
+3. Câți bytes poate stoca memoria rom folosită pentru instrucțiuni ?
+2*1024 bytes of ROM.
+
+4. Care sunt stagiile pipeline-ului?
+- IF (Instruction Fetch) 
+- ID (Instruction Decode) 
+- EX (Execute) 
+- MEM (Memory Access) 
+- WB (Write Back)
+
+5.Care instrucțiuni din cele de mai jos trebuie incluse în GROUP_ALU_TWO_OP ? 
+- ADD
+- SUB
+- AND
+- OR

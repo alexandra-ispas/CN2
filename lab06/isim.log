@@ -1,0 +1,40 @@
+ISim log file
+Running: /home/student/Desktop/Laborator 6/lab06_skel/unitTestCpu_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/student/Desktop/Laborator 6/lab06_skel/unitTestCpu_isim_beh.wdb 
+ISim P.20131013 (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+WARNING: File "/home/student/Desktop/Laborator 6/lab06_skel/cpu.v" Line 26.  For instance uut/reg_file/, width 16 of formal port debug_register_Y is not equal to width 7 of actual signal debug_register_Y.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Start cpu ...
+Legend:
+OPERATION OP1, OP2 - STAGE: OK <=> PASS
+OPERATION OP1, OP2 - STAGE: FAILED => EXPECTED_VALUE VS COMPUTED_VALUE <=> FAIL
+Init regs..
+Finished circuit initialization process.
+
+PC =>    0
+LDI R16, 1 - ID: OK
+LDI R16, 1 - WB: OK (R16 = 1)
+
+PC =>    1
+OUT           1, R16 - ID: OK 
+OUT           1, R16 - WB: OK
+
+PC =>    2
+SBI R1,           1 - ID: OK
+SBI R1,           1 - EX: OK
+
+PC =>    3
+CBI R1,           0 - ID: OK
+CBI R1,           0 - EX: OK
+
+PC =>    4
+IN R17,           1 - ID: OK
+IN R17,           1 - WB: OK
+# exit 0

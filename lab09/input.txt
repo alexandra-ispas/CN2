@@ -1,0 +1,10 @@
+ldi R18, 0
+out 0x05, R18 	;memory[`DDRB] = 0 (pentru citire, ca intrare)
+
+ldi R19, 255
+out 0x01, R19	;memory[`DDRA] = 255 (pentru scriere, ca iesire)
+
+my_loop:
+	in R20, 0x06	; R20 = memory[0x06]
+	out 0x02, R20
+	rjmp my_loop

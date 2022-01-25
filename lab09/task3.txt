@@ -1,0 +1,10 @@
+ldi     R16, 0b11000011     ; COM0A = 1 (fast pwm port operation, Clear OC0A on Compare Match, set OC0A at         
+                            ;BOTTOM (non-inverting mode))
+                            ; WGM0[1:0] = 1 (fast pwm mode operation)
+                         
+out     0x19, R16
+ldi     R16, 0b00000001    ; WGM0[2] = 0 (fast pwm mode operation)
+                            ; CS0 = 1 (clkT = clkIO/ No prescaling)
+out     0x18, R16
+ldi R16, 0b00111111
+out 0x16, R16

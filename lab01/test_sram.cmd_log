@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/student/Desktop/labs/lab01/test_sram.xst" -ofn "/home/student/Desktop/labs/lab01/test_sram.syr" 

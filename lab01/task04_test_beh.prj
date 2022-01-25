@@ -1,0 +1,5 @@
+verilog work "task03.v"
+verilog work "task01.v"
+verilog work "task04.v"
+verilog work "task04_test.v"
+verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
